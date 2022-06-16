@@ -28,12 +28,6 @@ public class Controller {
 
 	@RequestMapping(path = "/addEmployeeJson", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public String addEmployeeJson(@RequestBody Employee emp) {
-		System.out.println("abcd.............");
-		System.out.println(emp.getEmp_mobile());
-		System.out.println(emp.getEmp_email());
-		System.out.println(emp.getEmp_name());
-		System.out.println(emp.getEmp_username());
-		System.out.println(emp.getEmp_password());
 		return "success";
 	}
 
